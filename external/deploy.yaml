@@ -423,7 +423,7 @@ metadata:
     app.kubernetes.io/version: 0.41.2
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: admission-webhook
-  name: ingress-nginx-admission
+  name: ingress-nginx-admission-external
 webhooks:
   - name: validate.nginx.ingress.kubernetes.io
     matchPolicy: Equivalent
