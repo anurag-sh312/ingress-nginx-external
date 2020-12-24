@@ -46,7 +46,7 @@ metadata:
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/version: 0.41.2
     app.kubernetes.io/managed-by: Helm
-  name: ingress-nginx
+  name: ingress-nginx-external
 rules:
   - apiGroups:
       - ''
@@ -116,11 +116,11 @@ metadata:
     app.kubernetes.io/instance: ingress-nginx
     app.kubernetes.io/version: 0.41.2
     app.kubernetes.io/managed-by: Helm
-  name: ingress-nginx
+  name: ingress-nginx-external
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: ingress-nginx
+  name: ingress-nginx-external
 subjects:
   - kind: ServiceAccount
     name: ingress-nginx-external
