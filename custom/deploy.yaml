@@ -559,7 +559,7 @@ spec:
           imagePullPolicy: IfNotPresent
           args:
             - patch
-            - --webhook-name=ingress-nginx-admission
+            - --webhook-name=ingress-nginx-admission-custom
             - --namespace=$(POD_NAMESPACE)
             - --patch-mutating=false
             - --secret-name=ingress-nginx-admission
