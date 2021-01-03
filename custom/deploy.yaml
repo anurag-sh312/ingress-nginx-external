@@ -481,7 +481,7 @@ subjects:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: ingress-nginx-admission-create
+  name: ingress-nginx-admission-create-custom
   annotations:
     helm.sh/hook: pre-install,pre-upgrade
     helm.sh/hook-delete-policy: before-hook-creation,hook-succeeded
@@ -529,7 +529,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: ingress-nginx-admission-patch
+  name: ingress-nginx-admission-patch-custom
   annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: before-hook-creation,hook-succeeded
