@@ -63,6 +63,8 @@ rules:
       - ""
     resources:
       - namespaces
+    resourceNames:
+      - testns      
     verbs:
       - get
   - apiGroups:
